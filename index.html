@@ -258,6 +258,9 @@
             margin-top: 18px;
             padding: 12px;
             display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+            white-space: nowrap;
         }
         
         .result .details {
@@ -334,6 +337,18 @@
         /* Дополнительные эффекты для интерактивности */
         .criterion input:focus {
             border-color: rgba(167, 139, 250, 0.4);
+        }
+        
+        /* Мобильная адаптация */
+        @media (max-width: 500px) {
+            .result .net {
+                font-size: 36px;
+                padding: 8px 0;
+            }
+            
+            .result .amount {
+                font-size: 42px;
+            }
         }
     </style>
 </head>
