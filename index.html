@@ -429,7 +429,7 @@
                 totalKr += (krValues[i] / 100) * weights[i];
             }
             
-            const smartTasks = parseInt(document.getElementById('smartTasks').value) || 0;
+            const smartTasks = parseInt(document.getElementById('smartTasks').value) || 3;
             const smartKr = Math.min(smartTasks, 3) * 0.05;
             totalKr += smartKr;
             
